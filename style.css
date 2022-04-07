@@ -1,0 +1,65 @@
+/* .title (selector){ 
+    color(propiedad): aqua(valor);
+} */
+/* .title, .name (selectores){
+    color: aqua;
+    font-size(n propiedades): 15px;
+} */
+/*width: 50vw; vw: area visible del navegdor, osea que se encaje y se que asi mientras que la pagina sea de diferentes formas.*/
+@font-face{
+    font-family:Charter;
+    src:url(fonts/charter-regular.otf);
+    font-style:normal;
+    font-weight:400;/*de 100 a 300 delgado, 400 a 600 normal y 700 a mas bold*/
+}
+@font-face{
+    font-family:Charter;
+    src:url(fonts/charter-italic.otf);
+    font-style:italic;
+    font-weight:400;
+}
+@font-face{
+    font-family:Charter;
+    src:url(fonts/charter-bold.otf);
+    font-style:normal;
+    font-weight:bold;
+} 
+@font-face{
+    font-family:Charter;
+    src:url(fonts/charter-bold-italic.otf);
+    font-style:italic;
+    font-weight:bold;
+}     
+:root{
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+}
+body{
+    color: var(--gray30);
+    font-family:Charter; 
+}
+a{
+    color:var(--gray10) ;
+}
+header{
+    font-size: 14px;
+    color: var(--gray10);
+}
+nav details summary{
+    font-weight: bold;
+    
+}
+header a{
+    text-decoration: none;
+}
+header a:hover {
+    color: var(--gray30);
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 24px;
+}
