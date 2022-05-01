@@ -35,6 +35,9 @@
     --white20: #A5A3A5;
     --white10: #3A3539;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: var(--white30);
     font-family: 'Nunito', sans-serif;
@@ -164,13 +167,14 @@ blockquote p{
 .section_setup h3::before/*pseudo-clase que pone un elemento antes (en este caso despues de h1)en html*/{
     content: counter(titlelist) '. ';
 }
-/* .section_setup h3::after/*pseudo-clase que pone un elemento despues (en este caso despues de h1)en html*/{
-    content: '';/*contiene un valor aunque sea vacio, recuerda*/
+/* .section_setup h3::after{
+    pseudo-clase que pone un elemento despues (en este caso despues de h1)en html
+    content: '';/*contiene un valor aunque sea vacio, recuerda
     display: inline-block;
     width: 32px;
     height: 4px;
     background: var(--white30);
-} */
+}*/
 .section_setup h3{
     margin-top: 40px;
 }
@@ -180,9 +184,9 @@ blockquote p{
 .section_setup ul li{
     margin-top: 16px;
 }
-main{
-    /* border: 1px solid red; */
-}
+/* main{
+    border: 1px solid red;
+} */
 .wrapper{
     /* border: 1px solid yellow; */
     max-inline-size: 902px;
